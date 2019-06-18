@@ -8,20 +8,41 @@
 <body>
   <div class="reveal">
     <div class="slides">
+      <section>The HTML Presentation Framework </section>
+
+      <!-- Internal markdown --->
       <section data-markdown>
         <textarea data-template>
           ## Reveal JS
 
           You can read more here [link](https://github.com/hakimel/reveal.js/).
         </textarea>
-      </section>  
-      <section>
+      </section>
+
+      <!-- Nested Slides -->
+      <!-- <section>
         <section>Main Features</section>
         <section>01. Nested slides</section>
         <section>02. Markdown contents</section>
         <section>03. PDF export</section>
         <section>04. Speaker notes</section>
         <section>05. JavaScript API</section>
+      </section> -->
+
+      <section data-markdown data-separator="---">
+        <script type="text/template">
+          ## Main Features
+          ---
+          ## 01. Nested slides
+          ---
+          ## 02. Markdown contents
+          ---
+          ## 03. PDF export
+          ---
+          ## 04. Speaker notes
+          ---
+          ## 05. JavaScript API
+        </script>
       </section>
     </div>
   </div>
