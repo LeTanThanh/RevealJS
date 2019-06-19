@@ -3,7 +3,8 @@
 <head>
   <title>RevealJS</title>
   <link rel="stylesheet" href="css/reveal.css">
-	<link rel="stylesheet" href="css/theme/white.css">
+  <link rel="stylesheet" href="css/theme/white.css" id="theme">
+  <link rel="stylesheet" href="lib/css/monokai.css">
 </head>
 <body>
   <div class="reveal">
@@ -63,7 +64,17 @@
       <section data-markdown>
         <script type="text/template">
           <!-- .slide: data-background="#000000" -->
-          And more ....
+          ## AND MORE ...
+        </script>
+      </section>
+
+      <!-- Insert code -->
+      <section data-markdown>
+        <script type="text/template">
+          ## Simply call
+          ```javascript
+          Reveal.initialize();
+          ```
         </script>
       </section>
     </div>
@@ -72,8 +83,10 @@
   <script src="js/reveal.js"></script>
   <script src="plugin/markdown/marked.js"></script>
   <script src="plugin/markdown/markdown.js"></script>
+  <script src="plugin/highlight/highlight.js"></script>
   <script>
     Reveal.initialize();
+    hljs.initHighlightingOnLoad();
   </script>
 </body>
 </html>
