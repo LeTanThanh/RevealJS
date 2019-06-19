@@ -92,7 +92,28 @@
   <script src="plugin/markdown/markdown.js"></script>
   <script src="plugin/highlight/highlight.js"></script>
   <script>
-    Reveal.initialize();
+    Reveal.initialize({
+      // Display the page number of the current slide
+      slideNumber: true,
+
+      // Add the current slide number to the URL hash so that reloading the
+      // page/copying the URL will return you to the same slide
+      hash: true,
+
+      // Push each slide change to the browser history. Implies `hash: true`
+      history: true,
+
+      // Number of milliseconds between automatically proceeding to the
+      // next slide, disabled when set to 0, this value can be overwritten
+      // by using a data-autoslide attribute on your slides
+      autoSlide: 0
+    });
+
+    // Start auto-sliding every 5s
+    Reveal.configure({
+      autoSlide: 5000
+    });
+
     hljs.initHighlightingOnLoad();
   </script>
 </body>
